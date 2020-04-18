@@ -1,0 +1,622 @@
+************How Webpage works *********************
+
+- internet global network of computers and devices
+- each has IP address assigned by internet provider 73.158.6.61
+- private local IP address router has a public IP
+- computers talk with eachother using the TCP/IP protocol
+- HTTP handles web traffic (requests/responses)
+	application layer protocol
+	browser and server
+	one of more FTP, SMTP,
+
+Websides files stored on computers that run a piece of software called a web server (Apache, Nginx)
+
+Hosting companies provide space on a server for your websa you can have yur own computer but it is expensive get a server, shared hosting
+
+domain name - can be purchased fro registrars and linked to your hosting account
+
+DNS is used to map IP addresses to domain names
+
+type address in web brownes DNS server maps isthe name with address and does the HTTP request to the server Server will send the response
+
+OVERWHELMING
+HTML CSS - building blocks
+- HTML Hypertext Markup Language
+- markup for creating webpages/documents
+- visual
+- IMPORTANT
+- content
+- compiled sure HTML markup
+
+CSS Cascading Style Sheets
+- stylesheet Language
+- Visual style the contenct
+- Variables, calculation
+- Saas and Less extentions
+
+HTML CSS - human body
+language - brain
+
+Build static websites: Portfolios, small business sites, informational & brochure websites ect
+(no accounts)
+
+Build the visual part of anything
+
+****************** Tag Syntax **********************
+
+ntag - ending tag
+<br> line break no content self closing
+<br /> XHTML not used anymore much
+
+index.html - homepage. In host it will load a index.html as home
+
+**************** Standart Valid HTML doc ************
+
+1) DocType
+<!DOCTYPE html> what kind of html doc it is = HTML5
+2) html tag
+3) head - meta information about the page
+	4) title - goes to tab
+
+
+
+commenting
+<!-- This is the format of the comment -->
+
+ctrl + / - commenting our automtically works like toggle
+
+LiveServer -autoreload 
+
+basic htm structure in atom: html + Enter
+
+
+**************** ATOM LIFE SERVER *******************************
+
+ctrl-alt-l launch live server on port 3000.
+
+ctrl-alt-q stop live server.
+
+ctrl-alt-3 launch live server on port 3000.
+
+ctrl-alt-4 launch live server on port 4000.
+
+ctrl-alt-5 launch live server on port 5000.
+
+ctrl-alt-8 launch live server on port 8000.
+
+ctrl-alt-9 launch live server on port 9000.
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inicial-scale=1.0"> 
+- important for responsive websites
+
+
+************** META tags and Search engines *********
+
+not in the body
+charset = def "UTF-8"
+viewport tag - responsive to different screensizes
+	content "width=device-width, initial-scale-1.0"
+http-equiv - to make it workig in IE
+0.3% uses edge hahahahaha
+
+title will be showed in google searcher
+
+Good title example:
+Miami Website Design Company | Digital Agency | Fuze
+
+<meta name ="description" content=""> what will show up in google description
+
+<meta name="robots" content="NOINDEX, NOFOLLOW"> - if this meta is present the page wont be indexed in the search engine
+
+***************** Headings Paragraphs, Topography******
+ctrl + Enter : going to new line wvwn if you are in the middle of the word. 
+
+1) one h1 per page
+blog post h1
+
+
+write down lorem (the lorem latin text will show up!!!!)
+
+lorem500
+
+<strong> - by default but with css you can change the stylig
+- semantic should stand out
+
+<em> - italics
+<br>
+<del> strike through (styling in css)
+
+<a href="#"></a> -any a needs a href
+target="_blank" - opens the link in the new tab
+
+ctrl + arrow lefr right go to the beggining and the end of a world
+
+cursor in line + arrow up and down move the line up and down arround
+
+  <img src="" alt=""> - source and alternative text
+
+      <li>Item 1</li>
+<ol type="A">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+
+type A, I i, a, 1 
+
+Tables were used to table layout 10 years ago
+tables serves for tabular data
+
+Thanks to hoisting variables are set to udefined in the creation process
+
+
+*************** FORMS Inputs ************************
+
+submit a form 
+this happens in the backend 
+serverside programming languages process the form 
+
+<form class="" action="index.html" method="post">
+
+action - the file with php for example
+
+name used on the server side
+
+no label tags necesarry in radio just write it after
+
+
+placeholder
+<input type="email" name="email" id="email" value="" placeholder="Enter an email">
+
+ctrl + d 
+choose the next matching word
+
+************** Block and Inline elements************
+
+levels
+
+tags element 
+
+W3Schools
+
+
+
+Block level elements in HTML:
+<address>
+<article>
+<aside>
+<blockquote>
+<canvas>
+<dd>
+<div>
+<dl>
+<dt>
+<fieldset>
+<figcaption>
+<figure>
+<footer>
+<form>
+<h1>-<h6>
+<header>
+<hr>
+<li>
+<main>
+<nav>
+<noscript>
+<ol>
+<p>
+<pre>
+<section>
+<table>
+<tfoot>
+<ul>
+<video>
+
+
+
+Inline elements in HTML:
+<a>
+<abbr>
+<acronym>
+<b>
+<bdo>
+<big>
+<br>
+<button>
+<cite>
+<code>
+<dfn>
+<em>
+<i>
+<img>
+<input>
+<kbd>
+<label>
+<map>
+<object>
+<output>
+<q>
+<samp>
+<script>
+<select>
+<small>
+<span>
+<strong>
+<sub>
+<sup>
+<textarea>
+<time>
+<tt>
+<var>
+
+
+
+Difference:
+block level element will go across the whole page next element will go to the next line. 
+
+inline take up a space defined next element will go just after it
+
+****************** Divs and Spans *********************
+09_id_class.html
+
+class
+can be repeated
+
+id
+idividual no repetitions
+
+advice
+
+div - pushes a next thing down vs span 
+
+
+semantic tag
+header
+nav
+secction
+
+
+******************8 HTML Entities *********************
+
+****************** semantic tags ******************
+helps people with disabilities
+importants to use instead of divs
+
+header - self explanatory
+footer- self explanatory
+nav - unordered list grabbed in nav
+main - main content of the page
+section - 
+article - blog post, article post can be inside the section
+aside - side bar, ad, category section
+
+11_html5_semantics.html
+
+*************** CSS **********************************
+
+*************** Implementing CSS *********************
+
+
+<!-- Inline css -->
+    <h1 style="color: red"name="">Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+  </body>
+
+Internal Inside the file:
+<style media="screen">
+      h2{
+        color: green;
+      }
+    </style>
+
+
+
+syntax
+
+a{background-color: yellow;}
+
+a selector
+{ - declaration start
+} - declaration end
+background-color: - propery
+yellow: value
+
+
+
+/*  */ - comments in CSS
+ 
+external css
+
+  <link rel="stylesheet" href="css/style.css">
+
+***************** Selectors *************************
+
+h2#green-heading{
+        color: green;
+      }
+
+****************** id selector ****************
+#green-heading{
+        color: green;
+      }
+
+.green-heading{
+        color: green;
+      }
+
+
+naming conventions
+
+/* Multiple selectors */
+    #welcome, #about, h2{
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+*************** Dev tool in Chrome ***********************
+
+Ctrl + Shift + I
+
+Elements tab
+- html + css
+
+every browser has its default styling for elements. You can recognize it by 'user agent stylesheet'
+
+**************** Fonts in CSS ***************************
+
+Font family
+web safe fonts. 
+
+Set font family in the body
+
+if font family is not site safe we would need to include it in a file to our browser or access it remotely
+
+sans-serif : flater looking
+serif: more line times new rman traditional from book
+
+Non standart fonts
+fonts.google.com
+ex roboto
+link tag
+or import into css  - better. 
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+
+************** font size *******************************
+
+defoult is 16px
+space in between the line (in em)
+line-height: 1.6em;
+
+
+Absolute units:
+cm Centimeters
+mm Milimeters
+in Inches
+px Pixels(1px = 1/96th of 1in)
+pt Points (1pt = 1/72 of 1in)
+pc Picas pias(1pc = 12pt)
+
+Relative Units:
+% To parent element
+em To font size of paret element multiplayer
+rem To font size of root element (html by default 16px)
+vw To 1% of viewport width
+vh To 1% of viewport height
+
+font-weight
+font-style
+
+#welcome p span{
+        
+      }
+
+technicaly the p is no needed but it is better to use it
+
+************************* colors ***********************
+By name
+rgb(0,0,0) red green blue max for each is 255
+all 255 white
+all 0 black
+hexadecimal
+numbers 0-9 or and letters A-F
+all 0 black
+all f whites
+six simbols
+
+ff - red ff - green ff - blue 
+all the same we can cut by half 
+ex black #000000 = #000
+ex dark grey #333333 = #333
+
+
+color-hex.com
+shades and tints of the colours
+htmlcolorcodes 
+
+
+****************** BACKGROUNDS & BORDERS ***************
+
+transparent files:
+jpeg they can be transparent
+png can be transparent
+
+div is block so if we will set the background it will go across the page
+
+#box-1{
+        background-color: coral;
+      }
+
+Border has three properties:
+
+    #box-1{
+        border-width: 3px;
+        border-color: red;
+        border-style: solid;
+      }
+style dotted dashed solid
+
+or just border
+border: 3px solid red;
+
+rounding corners
+you can choose which corners to round: border-top-left-radius: 10px;
+
+image background
+  background-image: url('./img/stars.jpg')
+
+
+  #box-3{
+        background-image: url('./img/stars.jpg');
+        color: #fff;
+        height: 300px;
+        width: 600px
+      }
+
+small images repeat to fill the whole page
+background-repeat: no-repeat;
+
+background-position: move the image aroung axis x and y
+background-position: center center; moving the image around the background
+show the whole image
+background-size: cover;
+
+using one property
+size /cover (slash)
+
+background: url('./img/stars.jpg') no-repeat center center/cover;
+
+fixed backgrounget
+bigger it will be cut
+fixed when scrolling
+
+browser has default marf=gin and padding
+body has margin as well
+
+css reset gets off all of the styling
+
+*{
+        margin: 0;
+        padding: 0;
+      }
+
+padding is added to the entire width of the thing
+
+to prevent that we need to add a box-sizing property
+box-sizing: border-box;
+
+different values per site
+
+everything down overights the up
+
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-left: 20px;
+
+
+
+
+the same properties
+
+
+DESIGN and Ideas
+Photoshop design from the designer
+bootstrap themes
+
+In case of the links the color should be added specifically
+
+Custom selectors:
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+notice that when specifying the class of anchor tag there is no space. 
+
+Nowaydays we want the bacgrounds of thing to gocross the whole paga in earli 2000 we had two white stripes (of some funny ones) at the sides. So we will use the container inside the tags where we have declarated thebackgrounds
+
+
+
+.container {
+  margin:auto;
+  max-width: 1100px;
+}
+
+container utility class will be used in many ocasions
+background-size: cover;
+
+contain
+    Scales the image as large as possible without cropping or stretching the image.
+cover
+    Scales the image as large as possible without stretching the image. If the proportions of the image differ from the element, it is cropped either vertically or horizontally so that no empty space remains.
+
+give a section individual id
+use dashes with more than one word
+
+hidden classon the overflow property will cut the content when it is to long for the placeholder. div
+
+
+
+Media Queries
+
+/* Smartphones */
+      @media(max-width: 500px) {
+        body {
+          background: red;
+        }
+      }
+
+
+@media only screen and (max-width: 500px) {
+        body {
+          background: red;
+        }
+
+media typs: screen rint ect
+
+my screen has 1920 px
+
+
+
+em rem units
+
+
+em - multiplyier refers to the parent parent (or the element in some cases
+if we will add a size to the actual elementthe padding will go acording to this one, not to the parents
+
+- problem  with nested elements
+
+rem - root element (html)
+
+font size and margin by dfault will be 1em
+
+16 *1.7 = 18.72 for headings
+
+it is good to set the root font size to 10px to facilitate
+or 62.5% = 10px
+
+asesibility and browser settings (in the browser you can set wery wide letters - changing the root element font sizes)
+
+
+*****************View Port height and View port width**************************
+
+whole area inside the browser
+slice across, there will be always 100 of them 
+
+and viewport width also 100 viewports
+
+body just wraps what t has in the content 100% is the whole content
+
+you can put a color as background and then set the image on top
+
+
+Small changes needed
+

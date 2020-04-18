@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inline & Block styling</title>
+    <style media="screen">
+
+
+
+      li {
+        display: inline;
+      }
+
+      li a {
+        padding-right: 20px;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      .box {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 32.8%;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+    <br><br>
+
+    <img src="./img/leaf.png" alt="">
+    <br><br>
+
+    <div class="box">
+      <h3>Headings</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="box">
+      <h3>Headings</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="box">
+      <h3>Headings</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </body>
+</html>
+
+<!-- block-level
+element goes across thewhole page
+
+li {
+  display: inline;
+}
+
+- deletes also the bullet points
+image is Inline
+putting imagein the middle requires a margin so first we need to change the display to block
+
+if diplay is inline the width poperty is ignored. also: height, margins top and bottom and float have no effect.
+solution: inline-block
+
+-->

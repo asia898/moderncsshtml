@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Visibility Order Negative Margin</title>
+    <style media="screen">
+      h1 {
+        /* display: none; */
+        /* visibility: hidden; */
+        color: blue !important;
+      }
+
+      .hello {
+        color: red;
+        margin-top:  -30px;
+        margin-left: -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="hello">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </body>
+</html>
+
+<!--
+Visibility
+display: none; - remove from the browser completely. Ex. necesarry for the responsiveness
+
+visibility: hidden; - there is a space placeholder
+
+the further down the more important
+Class will override the css rules.
+
+important flag
+!important - this should take precedence
+
+Negative margin value (please avoing if you can)
+padding can't be negative.
+-->
