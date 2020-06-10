@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/css/lightbox.min.css">
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/style.css">
 
 
-    <title></title>
+    <title>Welcome to EdgeLedger</title>
   </head>
   <body id="home">
     <header class= "hero">
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar top">
         <h1 class="logo">
           <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
         </h1>
@@ -95,20 +98,68 @@
         </header>
         <div class="row">
           <div class="column">
+            <a
+            href="img/cases/cases2.jpg"
+            data-lightbox="cases"
+            data-title="noster esse aute duis fugiat cillum summis quem malis ipsum velit"
+            >
             <img src="img/cases/cases2.jpg" alt="">
+            </a>
+            <a
+            href="img/cases/cases1.jpg"
+            data-lightbox="cases"
+            data-title="noster esse aute duis fugiat cillum summis quem malis ipsum velit"
+            >
             <img src="img/cases/cases1.jpg" alt="">
+            </a>
           </div>
           <div class="column">
+            <a
+            href="img/cases/cases3.jpg"
+            data-lightbox="cases"
+            data-title="noster esse aute duis fugiat cillum summis quem malis ipsum velit"
+            >
             <img src="img/cases/cases3.jpg" alt="">
+            </a>
+            <a
+            href="img/cases/cases4.jpg"
+            data-lightbox="cases"
+            data-title="noster esse aute duis fugiat cillum summis quem malis ipsum velit"
+            >
             <img src="img/cases/cases4.jpg" alt="">
+            </a>
           </div>
           <div class="column">
+            <a
+            href="img/cases/cases5.jpg"
+            data-lightbox="cases"
+            data-title="noster esse aute duis fugiat cillum summis quem malis ipsum velit"
+            >
             <img src="img/cases/cases5.jpg" alt="">
+            </a>
+            <a
+            href="img/cases/cases6.jpg"
+            data-lightbox="cases"
+            data-title="noster esse aute duis fugiat cillum summis quem malis ipsum velit"
+            >
             <img src="img/cases/cases6.jpg" alt="">
+            </a>
           </div>
           <div class="column">
+            <a
+            href="img/cases/cases7.jpg"
+            data-lightbox="cases"
+            data-title="noster esse aute duis fugiat cillum summis quem malis ipsum velit"
+            >
             <img src="img/cases/cases7.jpg" alt="">
+            </a>
+            <a
+            href="img/cases/cases6.jpg"
+            data-lightbox="cases"
+            data-title="noster esse aute duis fugiat cillum summis quem malis ipsum velit"
+            >
             <img src="img/cases/cases8.jpg" alt="">
+            </a>
           </div>
 
         </div>
@@ -130,7 +181,7 @@
               <p>sunt minim malis fugiat noster quis quis esse illum amet nulla esse magna ipsum
                 fugiat amet veniam multos quorum minim quem legam tamen velit quae esse tempor
                 irure quorum sint</p>
-              <a href="#" class="btn btn-outlined">
+              <a href="blog.html" class="btn btn-outlined">
                 <i class="fas fa-chevron"></i>Read Our Blog
               </a>
             </div>
@@ -207,5 +258,53 @@
       </div>
         <p>Copyright &copy; 2020 - EdgeLedger</p>
     </footer>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.5.0.min.js"
+			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			  crossorigin="anonymous">
+
+    </script>
+
+
+    <script src="js/lightbox.min.js"></script>
+
+
+    <script type="text/javascript">
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function() {
+        if(window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if(!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function() {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        }else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      }
+
+      //Smooth Scrolling
+      $('#navbar a, .btn').on('click', function(e) {
+        if(this.hash !== '') {
+          e.preventDefault();
+          const hash = this.hash;
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
+
   </body>
 </html>
